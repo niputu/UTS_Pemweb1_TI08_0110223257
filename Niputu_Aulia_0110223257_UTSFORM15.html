@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form UTS</title>
+    <style>
+        .right  {text-align: right;}
+        .left   {text-align: left;}
+        .center {text-align: center;}
+
+        fieldset{
+            padding: 50px;
+            text-align: center;
+        }
+        
+        #td{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+            <br>
+            <legend><b>Form Registrasi Tempat Rekreasi Wisata </b></legend>
+            <div class="right">
+                <table> 
+                <tr> 
+                    <td>Nama Tempat Wisata</td> 
+                    <td class="left"><input type="text" name="title here" size="30"></td> 
+                </tr>
+
+                <tr> 
+                    <td>Jenis Wisata</td> 
+                    <td class="left">  
+                        <select id="wisata"> 
+                            <option>Taman</option>
+                            <option value="taman">Taman</option>
+                        </select> 
+                    </td> 
+                </tr> 
+
+                <tr> 
+                    <td>Deskripsi Wisata </td> 
+                    <td class="left"><textarea name="description" id="description" cols="30" rows="4"></textarea></td> 
+                </tr> 
+
+                <tr> 
+                    <td>Kontak Person</td> 
+                    <td class="left"><input type="number" name="phone"></td> 
+                </tr> 
+
+                <tr> 
+                    <td>No HP/Telpon</td> 
+                    <td class="left"><input type="number" name="phone"></td> 
+                </tr> 
+
+                <tr>
+                    <td>Email : </td>
+                    <td class="left"><input type="email" id="email" name="email"></td>
+                </tr>
+
+                <tr>
+                    <td>Alamat Web : </td>
+                    <td class="left"><input type="url" name="url" id="url" placeholder="https://" pattern="https://.*" size="30" </td>
+                </tr>
+
+                <tr> 
+                    <td>Alamat Lengkap : </td> 
+                    <td class="left"><textarea name="description" id="description" cols="30" rows="2"></textarea></td> 
+                </tr> 
+
+                <tr> 
+                    <td>Lotitude,Longitude : </td> 
+                    <td class="left"><input type="text" name="title here"></td> 
+                </tr>
+
+                </table>
+            </div>
+
+            <input type="submit" value="Daftar" name="tombol">
+            <input type="reset" value="Batal" name="tombol">
+    </fieldset>
+</body>
+</html>
